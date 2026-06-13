@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petal Hop — a watercolor garden platformer</title>
+<meta name="description" content="Petal Hop is a cozy watercolor garden platformer for Mac. Hop on the grumbles, mind the thorns, reach the Great Bloom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #fff7ef;
+    --ink: #7a6877;
+    --rose: #c4778d;
+    --leaf: #8fbb86;
+    --petal: #f5b8c4;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Gaegu", system-ui, sans-serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1200px 700px at 15% 10%, #ffe9ec 0%, transparent 60%),
+      radial-gradient(1000px 800px at 85% 90%, #e3f3e8 0%, transparent 55%),
+      radial-gradient(900px 600px at 80% 5%, #e9e2f7 0%, transparent 55%),
+      var(--cream);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 22px 80px; }
+  header { text-align: center; padding: 72px 0 24px; }
+  h1 {
+    font-family: "Chewy", cursive;
+    font-size: clamp(56px, 12vw, 104px);
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 0 rgba(226,137,157,.22), 0 10px 24px rgba(200,140,160,.25);
+  }
+  h1 .c1{color:#e88aa0} h1 .c2{color:#b79ae0} h1 .c3{color:#7fc8a2}
+  h1 .c4{color:#f0a96e} h1 .c5{color:#8db8dd}
+  .tagline { font-size: clamp(18px, 3vw, 24px); color: #a98a9b; margin: 6px 0 0; }
+  h2 {
+    font-family: "Chewy", cursive; color: var(--rose);
+    font-size: 30px; margin: 48px 0 12px; font-weight: 400;
+  }
+  a { color: var(--rose); text-decoration: none; border-bottom: 1.5px solid rgba(196,119,141,.35); }
+  a:hover { border-bottom-color: var(--rose); }
+  .shots { display: grid; gap: 16px; margin: 28px 0 8px; }
+  .shots img {
+    width: 100%; border-radius: 16px; display: block;
+    box-shadow: 0 10px 30px rgba(150,120,140,.18); border: 1px solid rgba(255,255,255,.6);
+  }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  kbd {
+    font-family: "Gaegu", sans-serif; font-weight: 700; background: #fff;
+    border: 1.5px solid #ecd3da; border-bottom-width: 3px; border-radius: 7px;
+    padding: 1px 8px; color: #a07487; font-size: .92em;
+  }
+  .card {
+    background: rgba(255,250,243,.7); border: 1.5px solid rgba(226,137,157,.22);
+    border-radius: 18px; padding: 4px 26px 22px; margin-top: 20px;
+  }
+  footer {
+    text-align: center; color: #b09aa8; font-size: 15px;
+    margin-top: 64px; padding-top: 24px; border-top: 1px solid rgba(196,119,141,.18);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="c1">P</span><span class="c2">e</span><span class="c3">t</span><span class="c4">a</span><span class="c5">l</span> <span class="c3">H</span><span class="c1">o</span><span class="c2">p</span><span class="c4">!</span></h1>
+    <p class="tagline">~ a watercolor garden platformer ~</p>
+  </header>
+
+  <div class="shots">
+    <img src="shots/01-title.png" alt="Petal Hop title screen" loading="lazy">
+    <img src="shots/02-overworld.png" alt="The garden overworld map" loading="lazy">
+    <img src="shots/04-cloud-steps.png" alt="Pip hopping between floating islands in Cloud Steps" loading="lazy">
+  </div>
+
+  <h2>About</h2>
+  <p>
+    Help Pip the sprout hop through eight hand-painted gardens — from Seedling Meadow to
+    the night-blooming finale. Hop on the grumbles, mind the thorns, ride the springs,
+    and reach the Great Bloom. Unlock the double hop and the wall kick as you go,
+    gather dewdrops off the beaten path, and rest at checkpoint flowers along the way.
+    Plays with keyboard or a game controller.
+  </p>
+
+  <h2 id="support">Support</h2>
+  <div class="card">
+    <h2 style="font-size:22px;margin-top:18px">Controls</h2>
+    <ul>
+      <li><kbd>←</kbd> <kbd>→</kbd> move &nbsp;·&nbsp; <kbd>Z</kbd> / <kbd>space</kbd> jump &nbsp;·&nbsp; <kbd>R</kbd> retry &nbsp;·&nbsp; <kbd>esc</kbd> pause</li>
+      <li>Game controller: stick or d-pad to move, <strong>A</strong>/<strong>B</strong> to jump, <strong>Start</strong> to pause</li>
+    </ul>
+    <h2 style="font-size:22px">Tips</h2>
+    <ul>
+      <li>Press jump again in mid-air for a double hop (unlocks after Thorn Hollow).</li>
+      <li>Hold toward a wall to slide, then jump to kick away (unlocks after Wilting Way).</li>
+      <li>Touch a checkpoint flower so you respawn there instead of restarting the level.</li>
+    </ul>
+    <h2 style="font-size:22px">Questions?</h2>
+    <p>Email <a href="mailto:clrung@gmail.com">clrung@gmail.com</a> and I'll happily help.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>
+    Petal Hop collects no data whatsoever. There is no network connection, no analytics,
+    no accounts, and no ads. Your progress is saved only on your own Mac.
+    Read the full <a href="privacy.html">privacy policy</a>.
+  </p>
+
+  <footer>
+    © 2026 Christopher Rung · made with ♡<br>
+    Fonts: <a href="https://fonts.google.com/specimen/Chewy">Chewy</a> (Apache 2.0) ·
+    <a href="https://fonts.google.com/specimen/Gaegu">Gaegu</a> (SIL Open Font License 1.1)
+  </footer>
+</div>
+</body>
+</html>
